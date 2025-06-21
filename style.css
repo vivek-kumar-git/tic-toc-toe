@@ -1,0 +1,97 @@
+/* Reset & Centering */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #dff9fb, #a1eafb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Game Board */
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  background-color: #87cefa; /* light sky blue */
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
+
+/* Cell Style */
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff8dc; /* light yellow */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Marked cells */
+.cell.x {
+  color: #e53935; /* red */
+  background-color: #ffe5e5; /* light red */
+}
+
+.cell.o {
+  color: #1e88e5; /* blue */
+  background-color: #e0f0ff; /* light blue */
+}
+
+/* Status and Scores */
+#status {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+#scores {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
