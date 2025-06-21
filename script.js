@@ -76,7 +76,7 @@ function resetFullGame() {
   xScore = 0;
   oScore = 0;
   xScoreText.textContent = '0';
-  oScoreText.textContent = '1';
+  oScoreText.textContent = '0';
   resetBoard();
 }
 
